@@ -152,7 +152,7 @@ data/car_data_cleaned.csv
 - CSV
 - GitHub
 
-## Notes
+## Notes 
 
 The raw dataset is included for reproducibility. If the original public dataset has redistribution restrictions, remove the raw file before publishing and link to the original source instead.
 
