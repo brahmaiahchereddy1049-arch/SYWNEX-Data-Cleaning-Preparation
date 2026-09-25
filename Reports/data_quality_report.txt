@@ -1,0 +1,80 @@
+DATA QUALITY & CLEANING REPORT
+============================================================
+Source rows: 301
+Cleaned rows: 299
+Duplicate records found: 2
+Duplicate records removed: 2
+
+MISSING VALUES (BEFORE CLEANING)
+------------------------------------------------------------
+Car_Name         0
+Year             0
+Selling_Price    0
+Present_Price    0
+Driven_kms       0
+Fuel_Type        0
+Selling_type     0
+Transmission     0
+Owner            0
+
+MISSING VALUES (AFTER CLEANING)
+------------------------------------------------------------
+Car_Name         0
+Year             0
+Selling_Price    0
+Present_Price    0
+Driven_kms       0
+Fuel_Type        0
+Selling_type     0
+Transmission     0
+Owner            0
+
+DATA TYPES (BEFORE CLEANING)
+------------------------------------------------------------
+Car_Name          object
+Year               int64
+Selling_Price    float64
+Present_Price    float64
+Driven_kms         int64
+Fuel_Type         object
+Selling_type      object
+Transmission      object
+Owner              int64
+
+DATA TYPES (AFTER CLEANING)
+------------------------------------------------------------
+Car_Name          string
+Year               Int64
+Selling_Price    float64
+Present_Price    float64
+Driven_kms         Int64
+Fuel_Type         string
+Selling_type      string
+Transmission      string
+Owner              Int64
+
+TEXT WHITESPACE ISSUES
+------------------------------------------------------------
+Car_Name: 5 values with leading/trailing whitespace
+Fuel_Type: 0 values with leading/trailing whitespace
+Selling_type: 0 values with leading/trailing whitespace
+Transmission: 0 values with leading/trailing whitespace
+
+NUMERIC RANGE CHECKS
+------------------------------------------------------------
+Year_out_of_range: 0
+Negative_Selling_Price: 0
+Negative_Present_Price: 0
+Negative_Driven_kms: 0
+Negative_Owner: 0
+
+CLEANING ACTIONS
+------------------------------------------------------------
+1. Trimmed leading/trailing whitespace from text columns.
+2. Collapsed repeated internal whitespace in Car_Name.
+3. Standardized categorical text capitalization.
+4. Standardized column names.
+5. Explicitly converted numeric fields to appropriate numeric types.
+6. Removed exact duplicate records.
+7. Checked for missing values; original dataset had no missing values.
+8. Validated the cleaned dataset for remaining duplicates and missing values.

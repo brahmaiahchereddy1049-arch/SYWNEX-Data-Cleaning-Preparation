@@ -1,0 +1,10 @@
+Column,Cleaned_Type,Description
+Car_Name,Text,Car/model name; whitespace normalized
+Year,Integer,Manufacturing year
+Selling_Price,Float,Selling price in lakh
+Present_Price,Float,Present/ex-showroom price in lakh
+Driven_kms,Integer,Kilometers driven
+Fuel_Type,Text,"Petrol, Diesel, or CNG"
+Selling_type,Text,Dealer or Individual
+Transmission,Text,Manual or Automatic
+Owner,Integer,Number of previous owners
